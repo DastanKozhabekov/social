@@ -7,7 +7,8 @@ function App() {
     <div className="wrapper">
       <Router>
         <Routes>
-          <Route exact path={Auth} />
+          <Route exact path={'*'} element={<Auth/>} />
+          <Route exact path={'/im'} element={<Home/>} />
         </Routes>
       </Router>
     </div>
